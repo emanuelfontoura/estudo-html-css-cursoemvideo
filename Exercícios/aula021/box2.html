@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Group Tags</title>
+    <style>
+        body{
+            background-image: linear-gradient(to right, #0a1dad, #011EFA, #4B60FB);
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+        }
+
+        header{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+        
+        .centro{
+            text-align: center;
+        }
+
+        main{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        footer{
+            background-color: black;
+            color: white;
+            padding: 5px;
+            margin: 0px;
+            text-align: center;
+        }
+
+        article{
+            background-color: darkgray;
+        }
+
+        article > aside{
+            background-color: rgb(126, 126, 126);
+        }
+
+        nav{
+            background-color: rgb(133, 133, 133);
+            padding: 3px;
+        }
+
+        nav>a{
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        nav>a:hover{
+            text-decoration: underline;
+        }
+
+        article>p{
+            display: none;
+        }
+
+        article:hover>p{
+            display: block;
+
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="centro">Meu site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="assuntos">
+            <article id="noticias">
+                <h2 class="especial">Notícias sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta, sequi atque quae officia eaque id voluptates. Neque, error. Iste exercitationem ipsa veniam inventore quisquam deleniti id voluptatibus nesciunt quis quo?</p>
+                <aside>
+                    O artigo foi escrito por
+                </aside>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        Desenvolvido por CursoEmVídeo
+    </footer>
+</body>
+</html>

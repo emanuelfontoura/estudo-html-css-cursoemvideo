@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+/* ESTILO GERAL */
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+    box-sizing: border-box;
+}
+
+html, body{
+    width: 100vw;
+    height: 100vh;
+    background-color: #233eff;
+}
+
+h1{
+    color: white;
+    text-shadow: 3px 3px 3px #192aaa9d;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* ESTILO PARA RETRATO */
+
+@media screen and (orientation: portrait) {
+    body{
+        background: url(../images/cev-portrait.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center bottom;
+    }
+}
+
+/* ESTILO PARA PAISAGEM */
+
+@media screen and (orientation: landscape){
+    body{
+        background: url(../images/cev-landscape.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: left bottom;
+    }
+}

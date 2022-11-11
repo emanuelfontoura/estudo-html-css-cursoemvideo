@@ -1,0 +1,132 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'War';
+    src: url('fonts/GODOFWAR.TTF') format('truetype');
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('fonts/Roboto-Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: url('fonts/Oswald-VariableFont_wght.ttf') format('truetype');
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-track{
+    background-color: white;
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: black;
+    border-radius: 20px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+:root{
+    --amarelo: #E6B93F;
+    --preto: black;
+    --branco: white;
+    --bgcorpo: #f0eadb;
+}
+
+.fotos img{
+    display: block;
+    margin: 20px auto;
+}
+
+header{
+    background-color: var(--preto);
+    padding: 10px;
+    min-height: 150px;
+    text-align: center;
+}
+
+header>h1{
+    padding-top: 50px;
+    color: var(--amarelo);
+    font-family: 'War', Arial, Helvetica, sans-serif;
+    font-size: 4em;
+    text-decoration: underline;
+}
+
+nav{
+    background-color: var(--preto);
+    padding: 12px;
+}
+
+div{
+    margin-left: 30px;
+}
+
+nav a{
+    color: var(--branco);
+    padding: 12px;
+    text-decoration: none;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    /*margin-left: 50px;*/
+}
+
+nav a:hover{
+    background-color: var(--branco);
+    color: var(--preto);
+    padding: 12px;
+    border-radius: 3px;
+    transition-duration: 0.4s;
+}
+
+body{
+    background-color: var(--bgcorpo);
+}
+
+main{
+    min-width: 300px;
+    max-width: 1200px;
+    background-color: var(--branco);
+    margin: auto;
+    margin-bottom: 46px;
+    padding: 20px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+main h2{
+    font-family: 'Oswald', Arial, Helvetica, sans-serif;
+    background-color: var(--preto);
+    color: var(--amarelo);
+    padding: 5px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+main p{
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    line-height: 1.5em;
+    margin: 15px 0px;
+    text-indent: 30px;
+}
+
+footer{
+    background-color: var(--preto);
+    color: var(--branco);
+    text-align: center;
+}
+
+footer>p{
+    font-size: 0.8em;
+    margin: 0;
+    padding: 3px;
+}

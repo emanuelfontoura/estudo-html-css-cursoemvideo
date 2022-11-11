@@ -1,0 +1,87 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html{
+    background-color: lightgrey;
+}
+
+.cabecalho{
+    background-color: gray;
+}
+
+.cabecalho > h1{
+    padding: 10px;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+i#burger{
+    background-color: rgb(54, 54, 54);
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+}
+
+i#burger:hover{
+    background-color: white;
+    color: black;
+}
+
+.menu{
+    display: none;
+    transition: 0.5s;
+}
+
+.menu > ul{
+    list-style: none;
+}
+
+.menu > ul > li > a{
+    display: block;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    background-color: rgb(92, 91, 91);
+    color: white;
+    transition: 0.2s;
+}
+
+.menu > ul > li > a:hover{
+    background-color: gray;
+}
+
+.principal{
+    width: 90vw;
+    background-color: white;
+    margin: auto;
+    padding: 10px;
+    border-radius: 7px;
+    margin-top: 10px;
+}
+
+.principal > article > h2{
+    padding-bottom: 20px;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.principal > article > p{
+    text-align: justify;
+    margin-bottom: 20px;
+    text-indent: 20px;
+    line-height: 1.4;
+    letter-spacing: 0.06em;
+}
+
+.rodape{
+    text-align: center;
+    margin-top: 8px;
+    font-family: 'Courier New', Courier, monospace;
+}

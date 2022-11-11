@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Vídeos em HTML</h1>
+    <p>Clique para reproduzir o vídeo.</p>
+    <video width="260" height="260" poster="midia/limoes-capa.png" controls>
+        <source src="midia/Meu-Video.m4v" type="video/mp4">
+        <source src="midia/Meu-Vídeo.ogv" type="video/ogg">
+        <source src="midia/Meu-Vídeo.webm" type="video/webm">
+        <p>Seu navegador não suporta vídeo.</p>
+    </video> 
+    
+    <h1>Inserindo vídeos externos do Youtube</h1>
+    <iframe width="260" height="260" src="https://www.youtube.com/embed/7XAodCNEaL4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <iframe width="260" height="260" src="midia/Meu-Video.m4v" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>

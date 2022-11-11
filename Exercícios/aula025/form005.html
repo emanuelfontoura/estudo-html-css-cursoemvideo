@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul{
+            list-style: none;
+            padding: 0;
+            margin: ;
+        }
+    </style>
+</head>
+<body>
+    <form action="cadastro.php" method="get">
+        <fieldset>
+            <legend>Sexo</legend>
+
+            <div>
+                <ul>
+                    <li>
+                        <input type="radio" name="sexo" id="isexmasc" value="M">
+                        <label for="isexmasc">Masculino</label>
+                    </li>
+
+                    <li>
+                        <input type="radio" name="sexo" id="isexfem" value="F">
+                        <label for="isexfem">Feminino</label>
+                    </li>
+                </ul>
+            </div>
+        </fieldset>
+
+
+        <fieldset>
+            <legend>Esportes favoritos</legend>
+
+            <div>
+                <ul>
+                    <li>
+                        <input type="checkbox" name="fut" id="ifut" value="FUT">
+                        <label for="ifut">Futebol</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="bas" id="ibas" value="BAS">
+                        <label for="ibas">Basquete</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="vol" id="ivol" value="VOL">
+                        <label for="ivol">Vôlei</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="ten" id="iten" value="TEN">
+                        <label for="iten">Tênis</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="futvol" id="ifutvol" value="FUTVOL">
+                        <label for="ifutvol">Futvôlei</label>
+                    </li>
+                </ul>
+            </div>
+
+            <input type="submit" value="Enviar">
+        </fieldset>
+    </form>
+</body>
+</html>

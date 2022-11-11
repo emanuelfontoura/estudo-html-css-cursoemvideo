@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagens Dinâmicas</h1>
+    <p>Tente abrir este site em vários dispositivos diferentes ou apenas aumente ou diminua o tamanho do seu navegador</p>
+
+    <picture>
+        <source media="(max-width:750px)" srcset="imagens/pequena.png" type="image/png">
+        <source media="(max-width:1050px)" srcset="imagens/media.png" type="image/png">
+        <img src="imagens/grande.png" alt="Imagem flexível">
+    </picture>
+
+    <h1>Reproduzindo áudio</h1>
+    <p>Vamos aprender a colocar áuido em nosso site.</p>
+    <audio preload="metadata"controls>
+        <source src="midia/botafogo.mp3" type="audio/mpeg">
+        <source src="midia/botafogo.ogg" type="audio/ogg">
+        <source src="midia/botafogo.wav" type="audio/wav">
+        <p>Seu navegador não suporta áudio.<a href="midia/botafogo.mp3" download="botafogo.mp3" type="audio/mpeg"> Baixe aqui</a>.</p>
+    </audio>
+
+    <video width="200" poster="imagens/limoes-capa.png" controls>
+        <source src="midia/Meu-Video.m4v" type="video/mp4">
+        <source src="midia/Meu-video.ogv" type="video/ogg">
+        <source src="midia/Meu-Video.webm" type="video/webm">
+        <p>Infelizmente o seu navegador não conseguiu carregar o vídeo.</p>
+    </video>
+</body>
+</html>

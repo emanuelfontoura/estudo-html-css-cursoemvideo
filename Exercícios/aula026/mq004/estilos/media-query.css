@@ -1,0 +1,58 @@
+@charset "UTF-8";
+
+/* ESTILO PARA AS MEDIAS EXCESSÕES */
+
+/* IMPRESSÃO */
+@media print{
+    img#print{
+        display: block;
+    }
+    img#phone{
+        display: none;
+    }
+}
+
+/* TABLET */
+@media screen and (min-width: 768px) and (max-width: 992px){
+    img#tablet{
+        display: block;
+    } 
+
+    img#phone{
+        display: none;
+    }
+
+    body{
+        background-image: url(../../imagens/back-tablet.jpg);
+    }
+}
+
+/* DESKTOP */
+@media screen and (min-width: 992px) and (max-width: 1200px){
+    img#pc{
+        display: block;
+    }
+
+    img#phone{
+        display: none;
+    }
+
+    body{
+        background-image: url(../../imagens/back-pc.jpg);
+    }
+}
+
+/* GRANDES TELAS */
+@media screen and (min-width: 1200px){
+    img#tv{
+        display: block;
+    }
+
+    img#phone{
+        display: none;
+    }
+
+    body{
+        background-image: url(../../imagens/back-tv.jpg);
+    }
+}

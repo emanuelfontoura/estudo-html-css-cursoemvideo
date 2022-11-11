@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas responsivas</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        caption{
+            font-size: 1.2em;
+            background-color: lightgray;
+        }
+
+        table{
+            width: 500px;
+            border-collapse: collapse;
+            margin: auto;
+            position: relative;
+        }
+
+        thead{
+            position: sticky;
+            top: -2px;
+            background-color: black;
+            color: white;
+            border: 1px solid black;
+        }
+
+        td, th{
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        tbody tr:nth-child(2n){
+            background-color: lightgray;
+        }
+
+        .container{
+            overflow-x: auto;
+        }
+
+        h1{
+            text-align: center;
+            height: 200px;
+            background-color: black;
+            color: white;
+            margin-bottom: 50px;
+            padding-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tabelas Responsivas</h1>
+
+    <div class="container">
+        <table>
+            <colgroup>
+                <col>
+                <col>
+            </colgroup>
+            <caption>Legenda</caption>
+            <thead>
+                <tr>
+                    <th rowspan="2">Produto</th>
+                    <th colspan="12">Vendas</th>
+                </tr>
+                <tr>
+                    <th>Jan</th>
+                    <th>Fev</th>
+                    <th>Mar</th>
+                    <th>Abril</th>
+                    <th>Maio</th>
+                    <th>Jun</th>
+                    <th>Jul</th>
+                    <th>Ago</th>
+                    <th>Set</th>
+                    <th>Out</th>
+                    <th>Nov</th>
+                    <th>Dez</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Arroz</td>
+                    <td>3.000</td>
+                    <td>4.500</td>
+                    <td>2.000</td>
+                    <td>2.500</td>
+                    <td>5.000</td>
+                    <td>6.000</td>
+                    <td>4.900</td>
+                    <td>2.200</td>
+                    <td>2.100</td>
+                    <td>1.500</td>
+                    <td>2.000</td>
+                    <td>2.300</td>
+                </tr>
+                <tr>
+                    <td>Arroz</td>
+                    <td>3.000</td>
+                    <td>4.500</td>
+                    <td>2.000</td>
+                    <td>2.500</td>
+                    <td>5.000</td>
+                    <td>6.000</td>
+                    <td>4.900</td>
+                    <td>2.200</td>
+                    <td>2.100</td>
+                    <td>1.500</td>
+                    <td>2.000</td>
+                    <td>2.300</td>
+                </tr>
+                <tr>
+                    <td>Arroz</td>
+                    <td>3.000</td>
+                    <td>4.500</td>
+                    <td>2.000</td>
+                    <td>2.500</td>
+                    <td>5.000</td>
+                    <td>6.000</td>
+                    <td>4.900</td>
+                    <td>2.200</td>
+                    <td>2.100</td>
+                    <td>1.500</td>
+                    <td>2.000</td>
+                    <td>2.300</td>
+                </tr>
+                <tr>
+                    <td>Arroz</td>
+                    <td>3.000</td>
+                    <td>4.500</td>
+                    <td>2.000</td>
+                    <td>2.500</td>
+                    <td>5.000</td>
+                    <td>6.000</td>
+                    <td>4.900</td>
+                    <td>2.200</td>
+                    <td>2.100</td>
+                    <td>1.500</td>
+                    <td>2.000</td>
+                    <td>2.300</td>
+                </tr>
+                <tr>
+                    <td>Arroz</td>
+                    <td>3.000</td>
+                    <td>4.500</td>
+                    <td>2.000</td>
+                    <td>2.500</td>
+                    <td>5.000</td>
+                    <td>6.000</td>
+                    <td>4.900</td>
+                    <td>2.200</td>
+                    <td>2.100</td>
+                    <td>1.500</td>
+                    <td>2.000</td>
+                    <td>2.300</td>
+                </tr>
+                <!--<tr>
+                    <td>Arroz</td>
+                    <td>3.000</td>
+                    <td>4.500</td>
+                    <td>2.000</td>
+                    <td>2.500</td>
+                    <td>5.000</td>
+                    <td>6.000</td>
+                    <td>4.900</td>
+                    <td>2.200</td>
+                    <td>2.100</td>
+                    <td>1.500</td>
+                    <td>2.000</td>
+                    <td>2.300</td>
+                </tr>
+                <tr>
+                    <td>Arroz</td>
+                    <td>3.000</td>
+                    <td>4.500</td>
+                    <td>2.000</td>
+                    <td>2.500</td>
+                    <td>5.000</td>
+                    <td>6.000</td>
+                    <td>4.900</td>
+                    <td>2.200</td>
+                    <td>2.100</td>
+                    <td>1.500</td>
+                    <td>2.000</td>
+                    <td>2.300</td>
+                </tr>
+                <tr>
+                    <td>Arroz</td>
+                    <td>3.000</td>
+                    <td>4.500</td>
+                    <td>2.000</td>
+                    <td>2.500</td>
+                    <td>5.000</td>
+                    <td>6.000</td>
+                    <td>4.900</td>
+                    <td>2.200</td>
+                    <td>2.100</td>
+                    <td>1.500</td>
+                    <td>2.000</td>
+                    <td>2.300</td>
+                </tr>
+                <tr>
+                    <td>Arroz</td>
+                    <td>3.000</td>
+                    <td>4.500</td>
+                    <td>2.000</td>
+                    <td>2.500</td>
+                    <td>5.000</td>
+                    <td>6.000</td>
+                    <td>4.900</td>
+                    <td>2.200</td>
+                    <td>2.100</td>
+                    <td>1.500</td>
+                    <td>2.000</td>
+                    <td>2.300</td>
+                </tr>
+                <tr>
+                    <td>Arroz</td>
+                    <td>3.000</td>
+                    <td>4.500</td>
+                    <td>2.000</td>
+                    <td>2.500</td>
+                    <td>5.000</td>
+                    <td>6.000</td>
+                    <td>4.900</td>
+                    <td>2.200</td>
+                    <td>2.100</td>
+                    <td>1.500</td>
+                    <td>2.000</td>
+                    <td>2.300</td>
+                </tr>
+
+                <tr>
+                    <td>Arroz</td>
+                    <td>3.000</td>
+                    <td>4.500</td>
+                    <td>2.000</td>
+                    <td>2.500</td>
+                    <td>5.000</td>
+                    <td>6.000</td>
+                    <td>4.900</td>
+                    <td>2.200</td>
+                    <td>2.100</td>
+                    <td>1.500</td>
+                    <td>2.000</td>
+                    <td>2.300</td>
+                </tr>
+
+                <tr>
+                    <td>Arroz</td>
+                    <td>3.000</td>
+                    <td>4.500</td>
+                    <td>2.000</td>
+                    <td>2.500</td>
+                    <td>5.000</td>
+                    <td>6.000</td>
+                    <td>4.900</td>
+                    <td>2.200</td>
+                    <td>2.100</td>
+                    <td>1.500</td>
+                    <td>2.000</td>
+                    <td>2.300</td>
+                </tr>
+
+                <tr>
+                    <td>Arroz</td>
+                    <td>3.000</td>
+                    <td>4.500</td>
+                    <td>2.000</td>
+                    <td>2.500</td>
+                    <td>5.000</td>
+                    <td>6.000</td>
+                    <td>4.900</td>
+                    <td>2.200</td>
+                    <td>2.100</td>
+                    <td>1.500</td>
+                    <td>2.000</td>
+                    <td>2.300</td>
+                </tr>
+
+                <tr>
+                    <td>Arroz</td>
+                    <td>3.000</td>
+                    <td>4.500</td>
+                    <td>2.000</td>
+                    <td>2.500</td>
+                    <td>5.000</td>
+                    <td>6.000</td>
+                    <td>4.900</td>
+                    <td>2.200</td>
+                    <td>2.100</td>
+                    <td>1.500</td>
+                    <td>2.000</td>
+                    <td>2.300</td>
+                </tr>
+
+                <tr>
+                    <td>Arroz</td>
+                    <td>3.000</td>
+                    <td>4.500</td>
+                    <td>2.000</td>
+                    <td>2.500</td>
+                    <td>5.000</td>
+                    <td>6.000</td>
+                    <td>4.900</td>
+                    <td>2.200</td>
+                    <td>2.100</td>
+                    <td>1.500</td>
+                    <td>2.000</td>
+                    <td>2.300</td>
+                </tr>
+
+                <tr>
+                    <td>Arroz</td>
+                    <td>3.000</td>
+                    <td>4.500</td>
+                    <td>2.000</td>
+                    <td>2.500</td>
+                    <td>5.000</td>
+                    <td>6.000</td>
+                    <td>4.900</td>
+                    <td>2.200</td>
+                    <td>2.100</td>
+                    <td>1.500</td>
+                    <td>2.000</td>
+                    <td>2.300</td>
+                </tr>
+
+                <tr>
+                    <td>Arroz</td>
+                    <td>3.000</td>
+                    <td>4.500</td>
+                    <td>2.000</td>
+                    <td>2.500</td>
+                    <td>5.000</td>
+                    <td>6.000</td>
+                    <td>4.900</td>
+                    <td>2.200</td>
+                    <td>2.100</td>
+                    <td>1.500</td>
+                    <td>2.000</td>
+                    <td>2.300</td>
+                </tr>
+
+                <tr>
+                    <td>Arroz</td>
+                    <td>3.000</td>
+                    <td>4.500</td>
+                    <td>2.000</td>
+                    <td>2.500</td>
+                    <td>5.000</td>
+                    <td>6.000</td>
+                    <td>4.900</td>
+                    <td>2.200</td>
+                    <td>2.100</td>
+                    <td>1.500</td>
+                    <td>2.000</td>
+                    <td>2.300</td>
+                </tr>
+
+                <tr>
+                    <td>Arroz</td>
+                    <td>3.000</td>
+                    <td>4.500</td>
+                    <td>2.000</td>
+                    <td>2.500</td>
+                    <td>5.000</td>
+                    <td>6.000</td>
+                    <td>4.900</td>
+                    <td>2.200</td>
+                    <td>2.100</td>
+                    <td>1.500</td>
+                    <td>2.000</td>
+                    <td>2.300</td>
+                </tr>
+
+                <tr>
+                    <td>Arroz</td>
+                    <td>3.000</td>
+                    <td>4.500</td>
+                    <td>2.000</td>
+                    <td>2.500</td>
+                    <td>5.000</td>
+                    <td>6.000</td>
+                    <td>4.900</td>
+                    <td>2.200</td>
+                    <td>2.100</td>
+                    <td>1.500</td>
+                    <td>2.000</td>
+                    <td>2.300</td>
+                </tr>
+
+                <tr>
+                    <td>Arroz</td>
+                    <td>3.000</td>
+                    <td>4.500</td>
+                    <td>2.000</td>
+                    <td>2.500</td>
+                    <td>5.000</td>
+                    <td>6.000</td>
+                    <td>4.900</td>
+                    <td>2.200</td>
+                    <td>2.100</td>
+                    <td>1.500</td>
+                    <td>2.000</td>
+                    <td>2.300</td>
+                </tr>
+
+                <tr>
+                    <td>Arroz</td>
+                    <td>3.000</td>
+                    <td>4.500</td>
+                    <td>2.000</td>
+                    <td>2.500</td>
+                    <td>5.000</td>
+                    <td>6.000</td>
+                    <td>4.900</td>
+                    <td>2.200</td>
+                    <td>2.100</td>
+                    <td>1.500</td>
+                    <td>2.000</td>
+                    <td>2.300</td>
+                </tr>
+
+                <tr>
+                    <td>Arroz</td>
+                    <td>3.000</td>
+                    <td>4.500</td>
+                    <td>2.000</td>
+                    <td>2.500</td>
+                    <td>5.000</td>
+                    <td>6.000</td>
+                    <td>4.900</td>
+                    <td>2.200</td>
+                    <td>2.100</td>
+                    <td>1.500</td>
+                    <td>2.000</td>
+                    <td>2.300</td>
+                </tr>
+
+                <tr>
+                    <td>Arroz</td>
+                    <td>3.000</td>
+                    <td>4.500</td>
+                    <td>2.000</td>
+                    <td>2.500</td>
+                    <td>5.000</td>
+                    <td>6.000</td>
+                    <td>4.900</td>
+                    <td>2.200</td>
+                    <td>2.100</td>
+                    <td>1.500</td>
+                    <td>2.000</td>
+                    <td>2.300</td>
+                </tr>
+
+                <tr>
+                    <td>Arroz</td>
+                    <td>3.000</td>
+                    <td>4.500</td>
+                    <td>2.000</td>
+                    <td>2.500</td>
+                    <td>5.000</td>
+                    <td>6.000</td>
+                    <td>4.900</td>
+                    <td>2.200</td>
+                    <td>2.100</td>
+                    <td>1.500</td>
+                    <td>2.000</td>
+                    <td>2.300</td>
+                </tr>
+
+                <tr>
+                    <td>Arroz</td>
+                    <td>3.000</td>
+                    <td>4.500</td>
+                    <td>2.000</td>
+                    <td>2.500</td>
+                    <td>5.000</td>
+                    <td>6.000</td>
+                    <td>4.900</td>
+                    <td>2.200</td>
+                    <td>2.100</td>
+                    <td>1.500</td>
+                    <td>2.000</td>
+                    <td>2.300</td>
+                </tr>
+
+                <tr>
+                    <td>Arroz</td>
+                    <td>3.000</td>
+                    <td>4.500</td>
+                    <td>2.000</td>
+                    <td>2.500</td>
+                    <td>5.000</td>
+                    <td>6.000</td>
+                    <td>4.900</td>
+                    <td>2.200</td>
+                    <td>2.100</td>
+                    <td>1.500</td>
+                    <td>2.000</td>
+                    <td>2.300</td>
+                </tr>
+
+                <tr>
+                    <td>Arroz</td>
+                    <td>3.000</td>
+                    <td>4.500</td>
+                    <td>2.000</td>
+                    <td>2.500</td>
+                    <td>5.000</td>
+                    <td>6.000</td>
+                    <td>4.900</td>
+                    <td>2.200</td>
+                    <td>2.100</td>
+                    <td>1.500</td>
+                    <td>2.000</td>
+                    <td>2.300</td>
+                </tr>
+            -->
+            </tbody>
+            <tfoot></tfoot>
+        </table>
+    </div>
+</body>
+</html>

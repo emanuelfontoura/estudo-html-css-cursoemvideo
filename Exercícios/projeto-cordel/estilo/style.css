@@ -1,0 +1,125 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+:root{
+    --f1: 'Passion One', cursive;
+    --f2: 'Roboto', sans-serif;
+    --f3: 'Roboto Condensed', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+}
+
+body{
+    min-height: 100vh;
+    font-family: var(--f2);
+}
+
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+header > h1{
+    padding-top: 50px;
+    font-variant: small-caps;
+    font-family: var(--f1);
+    font-size: 8vw;
+}
+
+header > h2{
+    padding-bottom: 50px;
+    padding-top: 10px;
+    font-weight: 200;
+    font-family: var(--f3);
+    font-size: 3vw;
+}
+
+header a, footer a{
+    text-decoration: none;
+}
+
+header a:hover, footer a:hover{
+    background-color: #BF6734;
+    padding: 2px;
+    border-radius: 3px;
+    transition-duration: 0.5s;
+}
+
+header a:visited, footer a:visited{
+    color: white; 
+}
+
+main{
+    background-color: white;
+    padding: 10px;
+}
+
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 20px;
+    padding-right: 20px;
+    line-height: 2em;
+    font-size: 3vw;
+}
+
+strong{
+    font-weight: bold;
+}
+
+.normal{
+    background-color: white;
+    color: black;
+}
+
+.imagem{
+    background-color: white;
+    color: black;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.103);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.imagem p{
+    background-color: rgba(0, 0, 0, 0.384);
+    display: inline-block;
+    padding: 5px;
+    color: white;
+    border-radius: 4px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.233);
+}
+
+#img01{
+    background-image: url(../images/bastiat.png);
+    background-repeat: no-repeat;
+    background-position: left top;
+}
+
+#img02{
+    background-image: url(../images/justice.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+
+#img03{
+    background-image: url(../images/bastiat-livro.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 5px;
+}

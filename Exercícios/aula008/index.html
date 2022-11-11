@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatação de texto</title>
+    <style>
+        mark {
+            background-color: brown;
+        }
+    </style> <!--ESSE STYLE NO HEAD SERVE PARA TODOS OS MARKS DO HTML-->
+</head>
+<body>
+    <h1>Principais formatações</h1>
+    <h2>Negrito</h2>
+    <p>Nesta frase, tenho um <b>termo em negrito </b>usando a tag <b>&lt;b&gt;</b>. NÃO SEMÂNTICO!</p>  <!--APENAS A FORMA-->
+    <p>Nesta frase, tenho um <strong>termo em negrito </strong>usando a tag <strong>&lt;STRONG&gt;</strong>. SEMÂNTICO!</p> <!--TEM SENTIDO, SEMÂNTICA-->
+    
+    <h2>Itálico</h2>
+    <p>Nesta frase, tenho um <i>termo em itálico</i> usando a tag <i>&lt;i&gt;</i>. NÃO SEMÂNTICO!</p> <!--APENAS A FORMA-->
+    <p>Nesta frase, tenho um <em>termo em itálico/ênfase</em> usando a tag <em>&lt;EM&gt;</em>. SEMÂNTICO!</p> <!--TEM SENTIDO, SEMÂNTICA-->
+
+    <h2>Marcar ("Marca texto")</h2>
+    <p>Nesta frase, tenho um <mark style="background-color: rgb(91, 245, 91);">termo marcado</mark> usando a tag <mark>&lt;mark&gt;</mark>.</p> <!--STYLE = CSS-->
+
+    <h2>Texto pequeno</h2>
+    <p>Nesta frase, tenho um <small>termo pequeno</small> usando a tag &lt;small&gt;</p>
+
+    <h2>Texto deletado</h2>
+    <p>Nesta frase, tenho um <del>termo deletado</del> usando a tag &lt;del&gt;</p>
+
+    <h2>Texto inserido(sublinhado)</h2>
+    <p>Nesta frase, tenho um <ins>termo inserido</ins> usando a tag &lt;ins&gt;</p>
+
+    <h2>Texto sobrescrito e subscrito</h2>
+    <p>Nesta frase, tenho a palavra x <sup>2</sup> com sobrescrito usando a tag &lt;sup&gt;</p>
+    <p>Nesta outra frase, tenho a palavra H<sub>2</sub>O com subsescrito usando a tag &lt;sub&gt;</p>
+
+    <h2>Códigos-fonte</h2>
+    <p>O comando <code>document.getElementById('teste')</code> é escrito em JavaScript e foi escrito aqui usando a tag &lt;code&gt; e &lt;pre&gt;</p>
+    <pre>
+        <code>
+    num = int(input('Digite um número'))
+    if num % 2 == 0:
+        print('O número {num} é par.')
+    else
+        print('O número {num} é ímpar.')
+        </code>
+    </pre>
+
+    <h2>Citações</h2>
+    <p>Como diria o pai de um amigo: <q>o computador é um burro muito rápido</q>. Crie citações usando a tag &lt;q&gt;</p>
+
+    <h2>Citações completas</h2>
+    <p>Segundo o professor Guanabara:</p>
+    <blockquote cite="https://www.google.com.br/books/edition/Fundamentos_de_HTML5_e_CSS3/2iPYCQAAQBAJ?hl=pt-BR&gbpv=1&dq=html&printsec=frontcover">
+        HTML é uma linguagem de marcação baseada em semântica enquanto CSS é uma linguagem de estilo em cascata baseada em formas. 
+    </blockquote>
+    <p>Você pode fazer isso usando a tag &lt;blockquote&gt; e também &lt;blockquote cite=""&gt;</p>
+
+    <h2>Abreviações</h2>
+    <p>Estou estudando <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Styles Sheets">CSS</abbr>. Estou amando!</p>
+    <p>Você pode fazer isso usando a tag &lt;abbr title=""&gt;</p>
+
+    <h2>Texto invertido</h2>
+    <p><bdo dir="rtl">Estou aprendendo a criar coisas no HTML</bdo> &lt;-- RTL</p>
+    <p><bdo dir="ltr">Estou aprendendo a criar coisas no HTML</bdo> &lt;-- LTR</p>
+    <p>Faça isso usando &lt;bdo dir ="rtl ou ltr">texto</p>
+</body>
+</html>

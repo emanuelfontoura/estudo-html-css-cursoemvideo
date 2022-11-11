@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <form action="cadastro.php" method="get">
+        <div>
+            <label for="iano">Ano de nascimento</label>
+            <input type="number" name="ano" id="iano" min="1900" max="2022" value="2000" oninput="calcIdade()" pattern="[0-9]{4}">
+        </div>
+
+        <div>
+            <label for="imes">Mês de nascimento</label>
+            <select name="mes" id="imes" oninput="calcIdade()">
+                <option value="1">Janeiro</option>
+                <option value="2">Fevereiro</option>
+                <option value="3">Março</option>
+                <option value="4">Abril</option>
+                <option value="5">Maio</option>
+                <option value="6">Junho</option>
+                <option value="7">Julho</option>
+                <option value="8">Agosto</option>
+                <option value="9">Setembro</option>
+                <option value="10">Outubro</option>
+                <option value="11">Novembro</option>
+                <option value="12">Dezembro</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="i_idade">Idade atual</label>
+            <output id="i_idade">0</output>
+        </div>
+
+        <div>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </div>
+    </form>
+
+    <script>
+        function calcIdade(){
+            var txt_ano_nascimento = window.document.getElementById('iano')
+            var ano_nascimento = Number(txt_ano_nascimento.value)
+            const ano_atual = new Date().getFullYear()
+            
+            var idade = (ano_atual - ano_nascimento) - 1
+
+            var res = window.document.querySelector('output#i_idade')
+
+            var mes_atual = new Date().getMonth() + 1
+            var txt_mes_nascimento = window.document.getElementById('imes')
+            var mes_nascimento = Number(txt_mes_nascimento.value)
+
+            if (mes_nascimento > mes_atual){
+                res.innerHTML = idade 
+            }else{
+                res.innerHTML = idade + 1
+            }
+
+        }
+    </script>
+</body>
+</html>
